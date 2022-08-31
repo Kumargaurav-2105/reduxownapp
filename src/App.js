@@ -3,7 +3,6 @@ import './App.css';
 import HomePage from './pages/HomePage'
 import CartPage from './pages/CartPage'
 import Navbar from './components/Navbar'
-import SearchPage from './pages/SearchPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import store from './store/store';
@@ -16,7 +15,6 @@ function App() {
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/cartpage' element={<CartPage />} />
-            <Route path='/searchpage' element={<SearchPage/>}/>
           </Routes>
         </Router>
       </Provider>
